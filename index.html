@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header class="python">Python DOC</header>
+            <ul>
+                <li><a class="nav-link" href="#introduccion">Introduccion</a></li>
+                <li><a class="nav-link" href="#variables">Variables</a></li>
+                <li><a class="nav-link" href="#tipos_de_datos">Tipos de datos</a></li>
+                <li><a class="nav-link" href="#operadores">Operadores</a></li>
+                <li><a class="nav-link" href="#estructuras_de_control">Estructuras de control</a></li>
+                <li><a class="nav-link" href="#funciones">Funciones</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <section class="main-section" id="introduccion">
+                <header>Introduccion</header>
+                <article>
+                    <p>Python es un lenguaje de programación de alto nivel que se destaca por su legibilidad y su versatilidad. Aquí tienes una breve introducción:</p>
+                    <ul>
+                        <li>Características del lenguaje Python:
+                            Multiparadigma: Admite programación imperativa, orientada a objetos y funcional.
+                            Multiplataforma: Disponible en Windows, Linux y Mac OS.
+                            Dinámicamente tipado: El tipo de las variables se decide en tiempo de ejecución.
+                            Fuertemente tipado: No se puede usar una variable fuera de su tipo sin conversión.
+                            Interpretado: No se compila a lenguaje máquina; se ejecuta mediante un intérprete.</li>
+                        <li>El intérprete de Python:
+                            Cuando instalas Python, se añade el comando python (o python3 para la versión 3.x) al path y se instala el intérprete correspondiente.
+                            Puedes verificar la versión de Python instalada ejecutando python3 en la consola. El resultado mostrará la versión del intérprete.
+                            En el intérprete, puedes escribir expresiones e instrucciones. Por ejemplo, 2 + 3 devuelve 5</li>
+                        <li>Primer programa en Python:
+                            Los programas se escriben en archivos con extensión .py.
+                            <p>Crea un archivo llamado suma.py con contenido como este:</p><br>
+                            <code># suma.py
+                                resultado = 2 + 3
+                                print("La suma es:", resultado)</code>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section id="variables" class="main-section">
+                <header>Variables</header>
+                <ul>
+                    <p>En Python, las variables son fundamentales para almacenar y manipular datos. Permíteme explicarte:</p>
+                    <li>¿Qué es una variable?
+                        <p>Una variable es un espacio de memoria reservado para guardar un valor.
+                        Cada variable tiene un nombre único que nos permite acceder y modificar su contenido.
+                        Imagina una variable como un contenedor en la memoria de la computadora donde almacenamos datos</p></li>
+                    <li>Asignación de valores a variables:
+                        Para asignar un valor a una variable, utilizamos el operador de asignación =. Por ejemplo:</li>
+                        <code># Asignamos el valor 42 a la variable 'edad' edad = 42
+                            </code>
+                    <li>Tipos de datos:
+                        Cada valor pertenece a un tipo de dato específico (entero, cadena, flotante, etc.).
+                        Al asignar un valor a una variable, definimos su tipo de dato</li>
+                        <br>
+                        <code>nombre = "Juan"  # 'nombre' es una cadena
+                            pi = 3.1416      # 'pi' es un flotante
+                            </code>
+                    <li>Acceso y modificación:
+                        Podemos acceder al valor de una variable y modificarlo durante la ejecución del programa. Por ejemplo:
+                        </li>
+                        <br>
+                        <code>resultado = 2 + 3
+                            print("La suma es:", resultado)  # Muestra "La suma es: 5"
+                            </code>
+                    <li>Buenas prácticas:
+                        <p>Define las variables al principio del programa.
+                        Si intentas usar una variable no definida, obtendrás un error.
+                        En resumen, las variables en Python nos permiten manejar datos de manera eficiente y estructurada. ¡Explora más y diviértete programando!</p></li>
+                </ul>
+            </section>
+            <section id="tipos_de_datos" class="main-section">
+                <header>Tipos de datos</header>
+                <p>En Python, existen varios tipos de datos que nos permiten manejar información de manera eficiente. Aquí tienes una breve descripción de algunos de los tipos más comunes:
+                </p>
+                <ol>
+                    <li>Enteros (int):
+                        Representan números enteros, como 1, 2, -3, etc.
+                        Ejemplo:</li>
+                        <code>edad = 25</code>
+                    <li>Flotantes (float):
+                        Representan números con decimales, como 3.14, -0.5, etc.
+                        Ejemplo:</li>
+                        <code>pi = 3.1416</code>
+                    <li>Cadenas (str):
+                        Son secuencias de caracteres, como “hola”, “mundo”, “Python”, etc.
+                        Ejemplo:</li>
+                        <code>nombre = "Juan"</code>
+                    <li>Booleanos (bool):
+                        Tienen dos valores posibles: True o False.
+                        Se utilizan para expresar condiciones lógicas.
+                        Ejemplo:</li>
+                        <code>es_mayor_de_edad = True</code>
+                    <li>Listas (list):
+                        Almacenan múltiples valores en orden.
+                        Pueden contener elementos de diferentes tipos.
+                        Ejemplo:</li>
+                        <code>numeros = [1, 2, 3, 4]</code>
+                    <li>Tuplas (tuple):
+                        Son similares a las listas, pero son inmutables (no se pueden modificar).
+                        Ejemplo:</li>
+                        <code>coordenadas = (10, 20)</code>
+                    <li>Diccionarios (dict):
+                        Asocian claves (keys) con valores (values).
+                        Útiles para representar datos estructurados.
+                        Ejemplo:</li>
+                        <code>persona = {"nombre": "Ana", "edad": 30}</code>
+                    <li>Conjuntos (set):
+                        Contienen elementos únicos y no tienen un orden específico.
+                        Útiles para operaciones matemáticas como intersección y unión.
+                        Ejemplo:</li>
+                        <code>colores = {"rojo", "verde", "azul"}</code>
+                </ol>
+            </section>
+            <section id="operadores" class="main-section">
+                <header>Operadores</header>
+                <p>Los operadores en Python son símbolos que indican al intérprete que realice operaciones específicas, como aritmética, comparación, lógica, entre otras. Aquí tienes una breve descripción de los diferentes tipos de operadores:</p>
+                <ul>
+                    <li>Operadores Aritméticos:
+                        Realizan cálculos matemáticos entre operandos.
+                        Ejemplos: <br>
+                        <code>Suma: 12 + 3 = 15</code><br>
+                        <code>Resta: 12 - 3 = 9</code><br>
+                        <code>Multiplicación: 12 * 3 = 36</code><br>
+                        <code>División: 12 / 3 = 4</code><br>
+                        <code>Módulo (resto de la división): 16 % 3 = 1</code><br>
+                        <code>Potencia: 12 ** 3 = 1728</code><br>
+                        <code>División entera: 18 // 5 = 3</code><br>
+                    </li>
+                    <li>Operadores Relacionales:
+                        Comparan valores y devuelven un resultado booleano (verdadero o falso).
+                        Ejemplos:</li>
+                        <code>Mayor que (>): 12 > 3 devuelve verdadero.</code><br>
+                        <code>Menor que (<): 12 < 3 devuelve falso.</code><br>
+                        <code>Igual a (==): 12 == 3 devuelve falso.</code><br>
+                        <code>Mayor o igual que (>=): 12 >= 3 devuelve verdadero.</code><br>
+                        <code>Menor o igual que (<=): 12 <= 3 devuelve falso.</code><br>
+                        <code>No igual a (!=): 12 != 3 devuelve verdadero.</code><br>
+                    <li>Operadores Bit a Bit:
+                        Realizan operaciones a nivel de bits.
+                        Ejemplos:</li>
+                        <code>AND (&): 10 & 11 = 10 (en binario).</code><br>
+                        <code>OR (|): 10 | 11 = 11 (en binario).</code><br>
+                        <code>XOR (^): 10 ^ 11 = 01 (en binario).</code><br>
+                        <code>NOT (~): ~2 = -3 (en binario)</code><br>
+                        <code>Desplazamiento a la derecha (>>): 2 >> 3 = 0 (en binario)</code><br>
+                        <code>Desplazamiento a la izquierda (<<): 2 << 3 = 16 (en binario).</code><br>
+                    <li>Operadores Lógicos, de Asignación, de Pertenencia y de Identidad también son parte de Python. Explora más y diviértete programando con estos <span><a target="_blank" href="https://www.freecodecamp.org/espanol/news/operadores-basicos-en-python-con-ejemplos/">operadores Python</a></span></li>
+                </ul>
+            </section>
+            <section id="estructuras_de_control" class="main-section">
+                <header>Estructuras de control</header>
+                <p>En Python, las estructuras de control son fundamentales para dirigir el flujo de ejecución de un programa. Estas estructuras nos permiten tomar decisiones, repetir bloques de código y crear lógica más compleja. Aquí tienes una breve descripción de las principales estructuras de control:</p>
+                <p>Condicional if:
+                  Permite ejecutar un bloque de código si se cumple una condición.
+                </p>
+                <code>temperatura = 25
+                    if temperatura > 30:
+                        print("Hace calor")
+                    else:
+                        print("No hace tanto calor")
+                    </code> 
+                <p>Estas estructuras son esenciales para escribir programas más complejos y funcionales. <a target="_blank" href="https://ellibrodepython.com/estructuras-control-python">¡Explora y experimenta con ellas aqui!</a></p>
+            </section>
+            <section id="funciones" class="main-section">
+                <header>Funciones</header>               
+                <p>En Python, una función es un bloque de código reutilizable que se puede ejecutar muchas veces dentro de tu programa. Las funciones te permiten crear soluciones más modulares y DRY (Don’t Repeat Yourself) para problemas complejos. Aquí tienes una breve descripción de cómo funcionan las funciones en Python:</p>
+                <p>Definición de una función:
+                Una función se define mediante la palabra clave def, seguida de un nombre de función y paréntesis que pueden contener parámetros.
+                </p>
+                <p>Por ejemplo:</p>
+                <code>def saludar(nombre):
+                    print("¡Hola,", nombre, "!")
+                </code>
+                <p>Hay muchos otros tipos de funciones. En resumen, las funciones en Python te permiten escribir código más eficiente, legible y modular. <a target="_blank" href="https://www.freecodecamp.org/espanol/news/guia-de-funciones-de-python-con-ejemplos/">¡Explora y crea tus propias funciones aqui!</a></p>               
+            </section>
+        </div>        
+    </main>
+</body>
+</html>
